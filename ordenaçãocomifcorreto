@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,c,d;
+
+    printf("Insira quatro valores: \n");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if(a==b || a==c || a==d || b==c || b==d || c==d)
+        printf("Por favor, insira numeros diferentes entre si.\n");
+    else printf("%d,%d,%d,%d\n",a,b,c,d);
+
+
+//ORDEM CRESCENTE E ORDEM DECRESCENTE
+
+    if(a>b && b>c && c>d){
+        printf("Ordem crescente: %d>%d>%d>%d",d,c,b,a);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",a,b,c,d);}
+    if(a>b && b>d && d>c){
+        printf("Ordem crescente: %d>%d>%d>%d",c,d,b,a);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",a,b,d,c);}
+    if(a>c && c>b && b>d){
+        printf("Ordem crescente: %d>%d>%d>%d",d,b,c,a);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",a,c,b,d);}
+    if(a>c && c>d && d>b){
+        printf("Ordem crescente: %d>%d>%d>%d",b,d,c,a);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",a,c,d,b);}
+    if(a>d && d>b && b>c){
+        printf("Ordem crescente: %d>%d>%d>%d",c,b,d,a);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",a,d,b,c);}
+    if(a>d && d>c && c>b){
+        printf("Ordem crescente: %d>%d>%d>%d",b,c,d,a);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",a,d,c,b);}
+
+    if(b>a && a>c && c>d){
+        printf("Ordem crescente: %d>%d>%d>%d",d,c,a,b);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",b,a,c,d);}
+    if(b>a && a>d && d>c){
+        printf("Ordem crescente: %d>%d>%d>%d",c,d,a,b);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",b,a,d,c);}
+    if(b>c && c>a && a>d){
+        printf("Ordem crescente: %d>%d>%d>%d",d,a,c,b);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",b,c,a,d);}
+    if(b>c && c>d && d>a){
+        printf("Ordem crescente: %d>%d>%d>%d",a,d,c,b);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",b,c,d,a);}
+    if(b>d && d>a && a>c){
+        printf("Ordem crescente: %d>%d>%d>%d",c,a,d,b);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",b,d,a,c);}
+    if(b>d && d>c && c>a){
+        printf("Ordem crescente: %d>%d>%d>%d",a,c,d,b);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",b,d,c,a);}
+
+    if(c>a && a>b && b>d){
+        printf("Ordem crescente: %d>%d>%d>%d",d,b,a,c);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",c,a,b,d);}
+    if(c>a && a>d && d>b){
+        printf("Ordem crescente: %d>%d>%d>%d",b,d,a,c);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",c,a,d,b);}
+    if(c>b && b>a && a>d){
+        printf("Ordem crescente: %d>%d>%d>%d",d,a,b,c);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",c,b,a,d);}
+    if(c>b && b>d && d>a){
+        printf("Ordem crescente: %d>%d>%d>%d",a,d,b,c);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",c,b,d,a);}
+    if(c>d && d>a && a>b){
+        printf("Ordem crescente: %d>%d>%d>%d",b,a,d,c);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",c,d,a,b);}
+    if(c>d && d>b && b>a){
+        printf("Ordem crescente: %d>%d>%d>%d",a,b,d,c);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",c,d,b,a);}
+
+
+    if(d>a && a>b && b>c){
+        printf("Ordem crescente: %d>%d>%d>%d",c,b,a,d);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",d,a,b,c);}
+    if(d>a && a>c && c>b){
+        printf("Ordem crescente: %d>%d>%d>%d",b,c,a,d);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",d,a,c,b);}
+    if(d>b && b>a && a>c){
+        printf("Ordem crescente: %d>%d>%d>%d",c,a,b,d);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",d,b,a,c);}
+    if(d>b && b>c && c>a){
+        printf("Ordem crescente: %d>%d>%d>%d",a,c,b,d);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",d,b,c,a);}
+    if(d>c && c>a && a>b){
+        printf("Ordem crescente: %d>%d>%d>%d",b,a,c,d);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",d,c,a,b);}
+    if(d>c && c>b && b>a){
+        printf("Ordem crescente: %d>%d>%d>%d",a,b,c,d);
+        printf("\nOrdem decrescente: %d>%d>%d>%d",d,c,b,a);}
+
+
+
+
+    return 0;
+}
